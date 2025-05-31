@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Timer - Focus & Productivity</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍅 Click</h1>
+            <p class="subtitle">Focus & Productivity Timer</p>
+        </header>
+        
+        <main>
+            <div class="timer-section">
+                <div class="timer-display" id="timer">25:00</div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress"></div>
+                </div>
+            </div>
+            
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="work">Work (25m)</button>
+                <button class="mode-btn" data-mode="short">Short Break (5m)</button>
+                <button class="mode-btn" data-mode="long">Long Break (15m)</button>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="startPause">Start</button>
+                <button class="control-btn stop" id="reset">Reset</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="workSessions">0</div>
+                    <div class="stat-label">Work Sessions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalTime">0m</div>
+                    <div class="stat-label">Total Focus</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="streak">0</div>
+                    <div class="stat-label">Daily Streak</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
